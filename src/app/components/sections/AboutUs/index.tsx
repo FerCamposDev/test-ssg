@@ -7,7 +7,7 @@ import { useParams } from 'next/navigation';
 type Props = {}
 
 const AboutUs = (props: Props) => {
-  const { lang } = useParams<LangProps>();
+  const { lang = 'es' } = useParams<LangProps>();
   const wordings = dictionary[lang];
 
   return (
